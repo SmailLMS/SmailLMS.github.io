@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Log</title>
+	<style type="text/css">
+		@media screen and (max-width: 1200px) {
+	.s-menu-btn, .h-menu-btn{
+		display: block;
+	}
+	.menu{
+		width: 100%;
+		position: fixed;
+		height: 100vh;
+		background: black;
+		right: -100%;
+		top: 0;
+		text-align: center;
+		padding: 80px 0;
+		line-height: normal;
+		transition: 1s;
+	}
+	.menu a{
+		display: block;
+		padding: 30px 0;
+	}
+	.h-menu-btn{
+		position: absolute;
+		right: 40px;
+		top: 40px;
+	}
+	#chk:checked ~ .menu{
+		right: 0;
+	}
+}
+		*{
+			font-family: impact;
+			letter-spacing: 1px;
+		}
+		body{
+			padding: 0;
+			margin: 0;
+			background: black;
+		}
+		form{
+			position: absolute;
+			width: 500px;
+			height: 250px;
+			border-radius:20px;
+			border-bottom: 2px solid #0652DD;
+			border-right: 2px solid #0652DD;
+			border-top: 2px solid #05c46b;
+			border-left: 2px solid #05c46b;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			padding: 10px 20px;	
+			text-align: center;
+			box-shadow: 10px 10px 20px #0652DD, -10px -10px 20px #05c46b;
+			transition: 2s;
+		}
+		form:hover{
+			border-bottom: 2px solid #05c46b;
+			border-right: 2px solid #05c46b;
+			border-top: 2px solid #0652DD;
+			border-left: 2px solid #0652DD;
+			box-shadow: -10px -10px 20px #0652DD, 10px 10px 20px #05c46b;
+			transition: 2s;
+		}
+		h1{
+			font-size: 50px;
+			color: white;
+			text-align: center;
+		}
+		a{
+			color: white;
+			text-decoration: none;
+			display: block;
+			width: 50px;
+			height: 20px;
+			font-size: 20px;
+			margin-top: 20px;
+			padding: 10px;
+			text-align: center;
+			border: 2px solid #05c46b;
+			border-radius: 20px;
+			background: #05c46b;
+			box-shadow: 0px 0px 20px #0652DD;
+		}
+		a:hover{
+			background:#0652DD; 
+			transition: 0.5s;
+			border: 2px solid #0652DD;
+			box-shadow: 0px 0px 20px #05c46b;
+		}
+		.gus{
+			position: absolute;
+			left: 50%;
+			width: 200px;
+			transform: translateX(-50%);
+			display: flex;
+			justify-content: space-between;
+		}
+	</style>
+</head>
+<body>
+<form action="">
+	<h1>You have account?</h1>
+	<div class="gus"><a href="link.html">Yes</a>
+	<a href="log.html">No</a></div>
+</form>
+</body>
+</html>
