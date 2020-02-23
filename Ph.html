@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+	<title>Konvertor</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: url(https://365psd.ru/images/backgrounds/flw-177-black.jpg);
+		}
+		.phon{
+			height: 650px;
+			width: 450px;
+			background: url(https://i.pinimg.com/originals/66/bf/95/66bf95d18477a815f7cc9d1a762a77cc.png);
+			position: fixed;
+			left: 100px;
+			top: 50px;
+		}
+		.bgph{
+			height: 450px;
+			width: 248px;
+			position: fixed;
+			background: url(https://bgfons.com/upload/ornaments_texture1133.jpg);
+			left: 240px;
+			top: 127px;
+		}
+		.up{
+			width: 248px;
+			height: 18px;
+			position: fixed;
+			left: 240px;
+			top: 127px;
+			background: url(up_if.png);
+		}
+		.top{
+			position: fixed;
+			top: 145px;
+			left: 242px;
+			width: 245px;
+			height: 40px;
+			background: #fbc531;
+		}
+		h3{
+			position: fixed;
+			line-height: 40px;
+			margin-left: 5px; 
+			font-family: impact;
+			font-size: 26px;
+			letter-spacing: 1.5px;
+			transition: 0.5s;
+			cursor: pointer;
+		}
+		h4{
+			position: fixed;
+			line-height: 40px;
+			margin-left: 210px;
+			font-size: 26px; 
+			font-family: impact;
+			letter-spacing: 1.5px;
+			cursor: pointer;
+			transition: 0.5s;
+		}
+		h4:hover, h3:hover{
+			color: #e84118;
+			transition: 0.5s;
+		}
+		h2{
+			position: fixed;
+			line-height: 40px;
+			margin-left: 5px;
+			font-size: 17px; 
+			font-family: impact;
+			letter-spacing: 1.5px;
+		}
+		.v1{
+			position: fixed;
+			left: 400px;
+			top:267px;
+			font-size: 17px;
+			border-radius: 20px;
+			border: 2px solid #fbc531;
+			outline: none;
+			transition: 0.5s;
+		}
+		.v1:hover, .v2:hover{
+			border: 2px solid #e84118;
+			transition: 0.5s;
+		}
+		.v2{
+			position: fixed;
+			left: 400px;
+			top:337px;
+			font-size: 17px;
+			border-radius: 20px;
+			border: 2px solid #fbc531;
+			outline: none;
+			transition: 0.5s;
+		}
+		.pol1{
+			position: fixed;
+			left: 280px;
+			top:267px;
+			height: 20px;
+			width: 100px;
+			font-size: 17px;
+			border: 2px solid #fbc531;
+			font-family: impact;
+			outline: none;
+			transition: 0.5s;
+			text-align: center;
+		}
+		.pol2{
+			position: fixed;
+			font-family: impact;
+			left: 280px;
+			top:337px;
+			width: 100px;
+			height: 20px;
+			font-size: 17px;
+			border: 2px solid #fbc531;
+			outline: none;
+			transition: 0.5s;
+			text-align: center;
+			background: #fff;
+		}
+		.pol1:focus, .pol2:focus{
+			border: 2px solid #e84118;
+			transition: 0.5s;
+		}
+		form{
+			height: 260px;
+			position: fixed;
+			top: 192px;
+			left: 248px;
+			width: 230px;
+			border: 2px solid #fbc531; 
+			background: #fff;
+
+		}
+		.nz{
+			height: 80px;
+			position: fixed;
+			top: 467px;
+			left: 248px;
+			width: 230px;
+			border: 2px solid #fbc531; 
+			background: #fff;
+
+		}
+		.in{
+			position: fixed;
+			left: 260px;
+			top: 307px;
+			width: 100px;
+			font-size: 15px;
+			font-family: impact;
+			letter-spacing: 1.5px;
+			outline: none;
+			transition: 0.5s;
+		}
+		h6{
+			position: fixed;
+			margin-left: 10px;
+			margin-top:5px;
+			font-size: 11px;
+			width: 210px;
+			font-family: impact;
+			height: 50px;
+			letter-spacing: 1px;
+		}
+		.from{
+			position: fixed;
+			left: 260px;
+			top: 237px;
+			width: 100px;
+			font-size: 15px;
+			font-family: impact;
+			letter-spacing: 1.5px;
+			outline: none;
+			transition: 0.5s;
+		}
+		.z{
+			position: fixed;
+			left: 393px;
+			top: 237px;
+			width: 100px;
+			font-size: 15px;
+			font-family: impact;
+			letter-spacing: 1.5px;
+			outline: none;
+			transition: 0.5s;
+		}
+		.u{
+			position: fixed;
+			left: 400px;
+			top: 307px;
+			width: 100px;
+			font-size: 15px;
+			font-family: impact;
+			letter-spacing: 1.5px;
+			outline: none;
+			transition: 0.5s;
+		}
+		.press{
+			position: fixed;
+			left: 290px;
+			top:387px;
+			width: 150px;
+			height: 30px;
+			font-size: 18px;
+			border-radius: 20px;
+			border: 2px solid #fbc531;
+			outline: none;
+			transition: 0.5s;
+		}
+		.press:hover{
+			background: #fbc531;
+			transition: 0.5s;
+		}
+	</style>
+</head>
+<body>
+	<div class="bgph"></div>
+	<div class="nz"><h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quaerat perferendis id quidem unde laborum iste debitis, voluptas sunt, necessitatibus reiciendis.</h6></div>
+	<div class="up"></div>
+	<div class="phon">
+		<div class="top">
+			<h3>MAX-банк:</h3>
+			<h4><i class="fas fa-bars"></i></h4>
+		</div>
+		<form name="frm">
+			<h2>Валютний калькулятор:</h2>
+			<h5 class="z">З якої: <i class="fas fa-level-down-alt" style="font-size: 15px;"></i></h5>
+			<h5 class="u">У яку: <i class="fas fa-level-down-alt" style="font-size: 15px;"></i></h5>
+			<h5 class="from">Міняю:</h5>
+			<h5 class="in">Отримую:</h5>
+			<input type="text" id="p1" class="pol1">
+			<p class="pol2" id="rez"></p>
+			<select name="sp" class="v1">
+				<option>UAH</option>
+				<option>USD</option>
+				<option>EUR</option>
+			</select>
+			<select name="sp1" class="v2">
+				<option>UAH</option>
+				<option>USD</option>
+				<option>EUR</option>
+			</select>
+			<input type="button" name="but" value="Підрахувати" class="press" onclick="vub();">
+		</form>
+	</div>
+	<script type="text/javascript">
+		function vub() {
+			var vub = frm.sp.selectedIndex;
+			var vub1 = frm.sp1.selectedIndex;
+			var n = document.getElementById("p1").value;
+			if (vub == 0 && vub1 == 0 ) {rez.innerText = n;}
+			else{
+				if (vub == 0 && vub1 == 1) {rez.innerText = (n/24).toFixed(2);}
+				else{
+					if (vub == 1 && vub1 == 0) {rez.innerText = (n*24).toFixed(2);}
+					else{
+						if (vub == 1 && vub1 == 1) {rez.innerText = n;}
+						else{
+							if (vub == 2 && vub1 == 2) {rez.innerText = n;}
+							else{
+								if (vub == 0 && vub1 == 2) {rez.innerText = (n/26).toFixed(2);}
+								else{
+									if (vub == 1 && vub1 == 2) {rez.innerText = (n*0.95).toFixed(2);}
+									else{
+										if (vub == 2 && vub1 == 0) {rez.innerText = (n*26).toFixed(2);}
+										else{
+											if (vub == 2 && vub1 == 1) {rez.innerText = (n/0.95).toFixed(2);}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	</script>
+</body>
+</html>
