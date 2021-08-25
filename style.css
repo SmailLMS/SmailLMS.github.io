@@ -775,14 +775,6 @@ section {
     src: url(Montserrat-Light.ttf);
 }
 @media screen and (max-width: 476px){
-body{
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: -70px;
-  padding-bottom: 70px;
-  transform: translateY(70px);
-}
 section {
   height: 100vh;
   font-size: 40px;
