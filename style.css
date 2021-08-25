@@ -1,8 +1,20 @@
-body{
-   background: url(https://total.kz/storage/9e/9e3a3fe4ac489bfafb66f3d8c4caefd5.jpg);
+.bl{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background:linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6)
+        ), url(https://total.kz/storage/9e/9e3a3fe4ac489bfafb66f3d8c4caefd5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  left: 0;
+	right: 0;
+	bottom: 0;
+	top: -70px;
+	padding-bottom: 70px;
+	transform: translateY(70px);
 }
 .bl{
   width: 100%;
