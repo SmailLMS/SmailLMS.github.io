@@ -9,12 +9,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  left: 0;
-	right: 0;
-	bottom: 0;
-	top: -70px;
-	padding-bottom: 70px;
-	transform: translateY(70px);
 }
 .bl{
   width: 100%;
