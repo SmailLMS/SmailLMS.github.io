@@ -1,1 +1,1 @@
-# SmaiLMS.github.io
+# SmailLMS.github.io
