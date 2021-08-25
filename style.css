@@ -1,7 +1,7 @@
-.bl{
+body{
   width: 100%;
   height: 100%;
-  position: fixed;
+  position: absolute;
   background:linear-gradient(
           rgba(0, 0, 0, 0.6), 
           rgba(0, 0, 0, 0.6)
@@ -9,13 +9,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-.bl{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background: #000;
-  opacity: 0.6;
 }
 .wrapper {
   min-height: 100vh;
@@ -769,6 +762,7 @@ section {
     src: url(Montserrat-Light.ttf);
 }
 @media screen and (max-width: 476px){
+
 section {
   height: 100vh;
   font-size: 40px;
