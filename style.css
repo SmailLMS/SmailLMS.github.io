@@ -1,6 +1,3 @@
-html {
-    overflow: hidden;
-}
 body{
   width: 100%;
   min-height: 100vh;
@@ -14,8 +11,6 @@ body{
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
-  overflow-y: scroll;
-   -webkit-overflow-scrolling:touch;
 }
 .wrapper {
   min-height: 100vh;
