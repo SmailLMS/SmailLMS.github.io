@@ -1,3 +1,6 @@
+html {
+    overflow: hidden;
+}
 body{
   width: 100%;
   min-height: 100vh;
@@ -6,8 +9,13 @@ body{
           rgba(0, 0, 0, 0.6)
         ), url(https://total.kz/storage/9e/9e3a3fe4ac489bfafb66f3d8c4caefd5.jpg);
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
+  overflow-y: scroll;
+   -webkit-overflow-scrolling:touch;
 }
 .wrapper {
   min-height: 100vh;
