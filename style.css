@@ -759,7 +759,21 @@ section {
     src: url(Montserrat-Light.ttf);
 }
 @media screen and (max-width: 476px){
-
+body{
+   background:linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6)
+        ), url(https://total.kz/storage/9e/9e3a3fe4ac489bfafb66f3d8c4caefd5.jpg);
+  background-position: center center;
+  height: 100vh;
+  background-size: cover;
+}
+.wrapper {
+  min-height: 100vh;
+  font-family: "Montserrat";
+  position: relative;
+  background:#000;
+}
 section {
   height: 100vh;
   font-size: 40px;
