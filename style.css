@@ -4,6 +4,7 @@ body{
           rgba(0, 0, 0, 0.6)
         ), url(https://total.kz/storage/9e/9e3a3fe4ac489bfafb66f3d8c4caefd5.jpg);
   background-position: center center;
+  position: fixed;
 }
 .wrapper {
   min-height: 100vh;
