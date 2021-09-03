@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+	<link rel="icon" href="icon.png">
+	<title>Store</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		jQuery(function($){
+		$('a[href*="#"]').on('click.smoothscroll', function( e ){
+		var hash    = this.hash, _hash   = hash.replace(/#/,''), theHref = $(this).attr('href').replace(/#.*/, '');
+		if( theHref && location.href.replace(/#.*/,'') != theHref ) return;
+		var $target = _hash === '' ? $('body') : $( hash + ', a[name="'+ _hash +'"]').first();
+		if( ! $target.length ) return;
+		e.preventDefault();
+		$('html, body').stop().animate({ scrollTop: $target.offset().top - 0 }, 400, 'swing', function(){
+		window.location.hash = hash;
+		});
+		});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+
+		  $(window).scroll(function(){
+		    if($(this).scrollTop() > 40){
+		      $('#topBtn').fadeIn();
+		    } else{
+		      $('#topBtn').fadeOut();
+		    }
+		  });
+
+		  $("#topBtn").click(function(){
+		    $('html ,body').animate({scrollTop : 0},800);
+		  });
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="lg"><i class="fas fa-car"></i><a href="index.html"><h1>store</h1></a></div>
+		<div class="menu">
+			<ul class="topmenu">
+				<li><a href="#o">О нас</a></li>
+				<li><a href="#">Каталог</a>
+					<ul class="submenu">
+						<li><a href="#vnal">В наличии</a></li>
+						<li><a href="#dorog">В дороге</a></li>
+						<li><a href="#zakaz">Заказать</a></li>
+					</ul>
+				</li>
+				<li><a href="#cn">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="reg">
+			<a href="#"><i class="fas fa-phone-alt"></i> +38 068 223 45 42</a>
+		</div>
+	</header>
+	<main>
+		<div class="top">
+			<div class="inf">
+				<p>Сайт по продаже авто, пригнаных из Америки с отремонтированными повреждениями.</p>
+			</div>
+			<div class="arr"><i class="fas fa-chevron-down"></i></div>
+			<div class="pic"></div>
+		</div>
+		<div class="next">
+			<h1 id="o">О нас</h1>
+			<div class="text">
+				<div class="map"></div>
+				<div class="ab">
+					<h2>Доступность, надёжность, качество</h2>
+					<p> - наши основные слоганы, которые подтвержены практикой. <br><br>Мы - молодая компания, которая осваивает ринок Украины и базируется в городе Кременчуге. <br><br> Каждый клиент получит полную консультацию та поддержку видео и фото фиксацией.</p>
+				</div>
+			</div>
+		</div>
+		<div class="katalog">
+			<h2 id="vnal">В наличии</h2>
+			<div class="cards1">
+				<div class="card1">
+					<div class="car"></div>
+					<div class="carinf">
+						<h3>Toyota Camry SE</h3>
+						<p><br> <i class="fas fa-cogs"></i> <b>Привод:</b> rwd <br><br> 
+							<i class="fas fa-ruler-horizontal"></i> <b>Пробег:</b> 50 000 км <br><br>
+							<i class="fas fa-calendar-alt"></i> <b>Год выпуска:</b> 2018 <br><br>
+							<i class="fas fa-tags"></i> <b>Цена:</b> 20 500 $ </p>
+							<a href="Katalog\car1.html">Подробнее</a>
+					</div>
+				</div>
+				<div class="card2">
+					<div class="car"></div>
+					<div class="carinf">
+						<h3>Toyota Camry SE</h3>
+						<p><br> <i class="fas fa-cogs"></i> <b>Привод:</b> rwd <br><br> 
+							<i class="fas fa-ruler-horizontal"></i> <b>Пробег:</b> 50 000 км <br><br>
+							<i class="fas fa-calendar-alt"></i> <b>Год выпуска:</b> 2018 <br><br>
+							<i class="fas fa-tags"></i> <b>Цена:</b> 20 500 $ </p>
+							<a href="#">Подробнее</a>
+					</div>
+				</div>
+				<div class="card3">
+					<div class="car"></div>
+					<div class="carinf">
+						<h3>Toyota Camry SE</h3>
+						<p><br> <i class="fas fa-cogs"></i> <b>Привод:</b> rwd <br><br> 
+							<i class="fas fa-ruler-horizontal"></i> <b>Пробег:</b> 50 000 км <br><br>
+							<i class="fas fa-calendar-alt"></i> <b>Год выпуска:</b> 2018 <br><br>
+							<i class="fas fa-tags"></i> <b>Цена:</b> 20 500 $ </p>
+							<a href="#">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<h2 id="dorog">В дороге</h2>
+			<div class="cards2">
+				<div class="card1">
+					<div class="car"></div>
+					<div class="carinf">
+						<h3>Toyota Camry SE</h3>
+						<p><br> <i class="fas fa-cogs"></i> <b>Привод:</b> rwd <br><br> 
+							<i class="fas fa-ruler-horizontal"></i> <b>Пробег:</b> 50 000 км <br><br>
+							<i class="fas fa-calendar-alt"></i> <b>Год выпуска:</b> 2018 <br><br>
+							<i class="fas fa-tags"></i> <b>Цена:</b> 20 500 $ </p>
+							<a href="Katalog\car1.html">Подробнее</a>
+					</div>
+				</div>
+				<div class="card2">
+					<div class="car"></div>
+					<div class="carinf">
+						<h3>Toyota Camry SE</h3>
+						<p><br> <i class="fas fa-cogs"></i> <b>Привод:</b> rwd <br><br> 
+							<i class="fas fa-ruler-horizontal"></i> <b>Пробег:</b> 50 000 км <br><br>
+							<i class="fas fa-calendar-alt"></i> <b>Год выпуска:</b> 2018 <br><br>
+							<i class="fas fa-tags"></i> <b>Цена:</b> 20 500 $ </p>
+							<a href="#">Подробнее</a>
+					</div>
+				</div>
+				<div class="card3">
+					<div class="car"></div>
+					<div class="carinf">
+						<h3>Toyota Camry SE</h3>
+						<p><br> <i class="fas fa-cogs"></i> <b>Привод:</b> rwd <br><br> 
+							<i class="fas fa-ruler-horizontal"></i> <b>Пробег:</b> 50 000 км <br><br>
+							<i class="fas fa-calendar-alt"></i> <b>Год выпуска:</b> 2018 <br><br>
+							<i class="fas fa-tags"></i> <b>Цена:</b> 20 500 $ </p>
+							<a href="#">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<h2 id="zakaz">Заказать</h2>
+			<div class="zak">
+				<div class="text_zakaz">
+					<h4>Доступность, надёжность, качество</h4>
+					<p> - наши основные слоганы, которые подтвержены практикой. <br><br>Мы - молодая компания, которая осваивает ринок Украины и базируется в городе Кременчуге. <br><br> Каждый клиент получит полную консультацию та поддержку видео и фото фиксацией.</p>
+				</div>
+				<form action="mail.php" method="POST">
+					<h1 id="rs">Подбор:</h1>
+					<p><input type="text" class="pol" placeholder="ФИО" name="user" required></p>
+				   	<p><input type="text" class="pol" placeholder="Номер" name="phone" required></p>
+					<p><select class="pol" name="type" required>
+					    <option disabled selected>Тип кузова: </option>
+					    <option value="Седан">Седан</option>
+					    <option value="Универсал">Универсал</option>
+					    <option value="Хэтчбек">Хэтчбек</option>
+					    <option value="Минивен">Минивен</option>
+					    <option value="Внедорожник">Внедорожник</option>
+					    <option value="Купе">Купе</option>
+					    <option value="Кабриолет">Кабриолет</option>
+					    <option value="Пикап">Пикап</option>
+					    <option value="Лимузин">Лимузин</option>
+					    <option value="Грузовик">Грузовик</option>
+					    <option value="Грузопассажир">Грузопассажир</option>
+					    <option value="Автобус">Автобус</option>
+				   </select></p>
+				   <p><select class="pol" name="year" required>
+					    <option disabled selected>Год: </option>
+					    <option value="21">2021</option>
+					    <option value="20">2020</option>
+					    <option value="19">2019</option>
+					    <option value="18">2018</option>
+					    <option value="17">2017</option>
+					    <option value="16">2016</option>
+					    <option value="15">2015</option>
+					    <option value="14">2014</option>
+					    <option value="13">2013</option>
+					    <option value="12">2012</option>
+					    <option value="11">2011</option>
+					    <option value="10">2010</option>
+					    <option value="9">2009</option>
+					    <option value="8">2008</option>
+					    <option value="7">2007</option>
+					    <option value="6">2006</option>
+					    <option value="5">2005</option>
+					    <option value="4">2004</option>
+					    <option value="3">2003</option>
+					    <option value="2">2002</option>
+					    <option value="1">2001</option>
+					    <option value="0">2000</option>
+
+				   </select></p>
+				   <p><input type="text" class="pol" placeholder="Бюджет:" name="budjet"></p>
+				   <p><button type="submit" class="frm">Отправить</button></p>
+
+				</form>
+			</div>
+		</div>
+		<div class="cont">
+			<h1 id="cn">Контакты</h1>
+			<div class="link">
+			<ul>
+				<li>
+					<a href="">
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"><i class="fab fa-google"></i></div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"><i class="fab fa-instagram"></i></div>
+					</a>
+				</li>
+				<li>
+					
+					<a href="">
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"><i class="fab fa-facebook-f"></i></div>
+					</a>
+				</li>
+				<li>
+					
+					<a href="">
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"><i class="fab fa-telegram-plane"></i></div>
+					</a>
+				</li>
+				<li>
+					
+					<a href="">
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"></div>
+						<div class="shd"><i class="fab fa-twitter"></i></div>
+					</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</main>
+	<button id="topBtn"><i class="fas fa-arrow-circle-up"></i></button>
+</body>
+</html>

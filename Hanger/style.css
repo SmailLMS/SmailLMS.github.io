@@ -1,0 +1,308 @@
+html{
+	box-sizing: border-box;
+	overflow-y: hidden;
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: Montserrat;
+	background: url(https://image.freepik.com/free-photo/blurred-blue-sky-and-sea-well-use-as-blur-backdrop-of-ocean-concept-blurry-pastel-colored-of-sunshine_1258-241.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.line{
+	position: absolute;
+	top: -370px;
+	width: 130%;
+	height: 500px;
+	border: 3px solid #595260;
+	border-radius: 50%;
+}
+.line1{
+	position: absolute;
+	top: -370px;
+	width: 130%;
+	height: 500px;
+	left: 120vh;
+	border: 3px solid #595260;
+	border-radius: 50%;
+}
+main{
+	width: 500vh;
+	height: 100vh;
+}
+
+.top{
+	position: relative;
+	width: 1200px;
+	height: 80vh;
+	top: 50px;
+	left: 100px;
+	z-index: 1001;
+	display: flex;
+}
+.ph{
+	width: 35%;
+	height: 610px;
+	position: relative;
+	padding: 15px;
+	color: #2C2E43;
+	box-sizing: border-box;
+	background: url(https://instapik.ru/wp-content/uploads/2021/03/myatyy-list-bumagi.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	transform: rotate(5deg);
+}
+.clip{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: -30px;
+	transform: rotate(-60deg);
+	background: url(https://pngicon.ru/file/uploads/skrepka.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.clip1{
+	position: absolute;
+	top: -30px;
+	left: 90px;
+	transform: rotate(-45deg);
+	width: 70px;
+	height: 70px;
+	background: url(https://pngicon.ru/file/uploads/skrepka.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.clip2{
+	position: absolute;
+	top: -20px;
+	left: 250px;
+	transform: rotate(-25deg);
+	width: 70px;
+	height: 70px;
+	background: url(https://pngicon.ru/file/uploads/skrepka.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.clip3{
+	position: absolute;
+	top: -20px;
+	left: 100px;
+	transform: rotate(-65deg);
+	width: 70px;
+	height: 70px;
+	background: url(https://pngicon.ru/file/uploads/skrepka.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.clip4{
+	position: absolute;
+	top: -20px;
+	left: 770px;
+	transform: rotate(5deg);
+	width: 70px;
+	height: 70px;
+	background: url(https://pngicon.ru/file/uploads/skrepka.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.ph h2{
+	font-size: 45px;
+
+}
+.ph	p{
+	margin-top: -15px;
+	font-size: 25px;
+}
+.ph .jun{
+	width: 100px;
+	border-bottom:2px solid #2C2E43;
+	height: 30px;
+	text-align: center;
+	padding-top: 10px;
+	color: #2C2E43;
+}
+.ph .jun::after{
+	position: absolute;
+	content: '';
+	width: 100px;
+	height: 1px;
+	top: 158px;
+	left: 20px;
+	background: #000;
+	transform: rotate(2deg);
+}
+.ph .jun::before{
+	position: absolute;
+	content: '';
+	width: 100px;
+	height: 1px;
+	top: 158px;
+	left: 20px;
+	background: #000;
+	transform: rotate(-2deg);
+}
+.ph .bm{
+	margin-top: 50px ;
+}
+.ph .bt{
+	margin-top: 150px ;
+	font-size: 30px;
+}
+.ph a{
+	display: block;
+	width: 150px;
+	height: 40px;
+	border-bottom:2px solid #2C2E43;
+	color: #2C2E43;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 18px;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.ph a:hover{
+	transition: 0.5s;
+	color: #fff;
+}
+.ph a::after{
+	position: absolute;
+	content: '';
+	width: 100px;
+	height: 1px;
+	bottom: 80px;
+	left: 20px;
+	background: #000;
+	transform: rotate(2deg);
+}
+.ph a::before{
+	position: absolute;
+	content: '';
+	width: 150px;
+	height: 1px;
+	bottom: 80px;
+	left: 20px;
+	background: #000;
+	transform: rotate(-2deg);
+}
+.phot{
+	width: 380px;
+	height: 400px;
+	position: relative;
+	left: 80px;
+	top: 85px;
+	padding: 15px;
+	color: #fff;
+	background: #fff;
+}
+.png{
+	width:95%;
+	height: 90%;
+	background: url(http://fotogora.ru/wp-content/uploads/2014/10/by-Victor-Alekseev.jpg);
+	background-size: 110%;
+	background-position: -10px;
+	margin-left: 2.5%;
+}
+.phot p{
+	display: block;
+	position: relative;
+	color: #2C2E43;
+	font-size: 30px;
+	bottom: 50px;
+	left: 305px;
+	transform: rotate(-10deg);
+}
+.txt{
+	width: 400px;
+	height: 350px;
+	position: absolute;
+	right: -150px;
+	top: 80px;
+	padding: 15px;
+	color: #2C2E43;
+	box-sizing: border-box;
+	background: #D9DD6B;
+	transform: rotate(-10deg);
+}
+.txt h2{
+	font-size: 35px;
+	margin-bottom: -5px;
+}
+.txt p {
+	font-size: 22px;
+}
+.txt::after{
+	position: absolute;
+	content: '0';
+	color: #2C2E43;
+	font-size: 23px;
+	bottom: 105px;
+	left: 125px;
+}
+.txt::before{
+	position: absolute;
+	content: 's';
+	color: #2C2E43;
+	font-size: 23px;
+	top: 94px;
+	left: 167px;
+}
+hr{	
+	margin-top: 5px;
+	height: 0;
+	border: none;
+	border-top: 2px dashed #2C2E43;
+}
+.txt .mail{
+	font-size: 21px;
+}
+.edu{
+	width: 1000px;
+	height: 500px;
+	position:absolute;
+	box-sizing: border-box;
+	top: 110px;
+	left: 210vh;
+	transform: rotate(-3deg);
+	background: url(https://instapik.ru/wp-content/uploads/2021/03/tekstura-lista-bumagi-v-kletku.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction:column ;
+	justify-content: space-between;
+	padding: 0 30px;
+}
+.edu h2{
+	font-size: 50px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
+.s24, .lic, .nau{
+	width: 100%;
+	height: 30%;
+	display: flex;
+	font-size: 25px;
+}
+.s24 .pct{
+	width: 60%;
+	height: 100%;
+	background: url(https://papik.pro/uploads/posts/2021-01/1611392137_15-p-risunok-detskii-chelovechka-15.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.lic .pct{
+	width: 40%;
+	height: 100%;
+	background: url(https://74foto.ru/800/600/https/promisedhopechurch.files.wordpress.com/2017/08/img_4235.gif?w=1400&h=9999);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+@font-face {
+    font-family: Montserrat; 
+    src: url(20686.ttf);
+}
